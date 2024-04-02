@@ -5,8 +5,8 @@
 <form method="post">
 	{% csrf_token %}
 	<fieldset>
-		<h1 class="tablink" onclick="openPage('new')" id="defaultOpen">Add Instructor</h1>
-		<a href="{% url 'editinstructor' %}"><h1 class="tablink" onclick="openPage('edit')" id="link_to_edit">Edit Instructor</h1></a>
+		<h1 class="tablink" onclick="openPage('new')" id="defaultOpen">Add Professor</h1>
+		<a href="{% url 'editinstructor' %}"><h1 class="tablink" onclick="openPage('edit')" id="link_to_edit">Edit Professor</h1></a>
 		<div class="tabcontent" id="new">
 			{{ form.as_p }}
 		<input type="submit" value="Submit" class="submit">
